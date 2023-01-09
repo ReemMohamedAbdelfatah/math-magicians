@@ -2,7 +2,7 @@
 
 <div align="center">
 
-  <img src="murple_logo.png" alt="logo" width="140"  height="auto" />
+  <img src="mathmagician.jpeg" alt="logo" width="140"  height="auto" />
   <br/>
 
   <h3><b>MAth Magician Read Me</b></h3>
