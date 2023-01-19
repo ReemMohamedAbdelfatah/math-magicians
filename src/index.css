@@ -1,3 +1,14 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+  margin: 70px;
+}
+
+p {
+  font-size: x-large;
+  font-weight: bold;
+}
+
 .calculator {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
