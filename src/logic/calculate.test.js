@@ -1,6 +1,15 @@
 import calculate from './calculate';
 
+describe('Button AC', () => {
+  test('Elemets should be cleared!', () => {
+    const opreations = { total: 10, next: 20, operation: '+' };
 
+    const expected = { total: null, next: null, operation: null };
+    const buttonName = 'AC';
+    const result = calculate(opreations, buttonName);
+    expect(result).toEqual(expected);
+  });
+});
 
 describe('Button =', () => {
   test('Elements should show result after pressing = sign', () => {
