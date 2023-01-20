@@ -83,7 +83,7 @@
 
 > Add a link to your deployed project.
 
-- [Live Demo Link](https://reemmohamedabdelfatah.github.io/math-magicians/)
+- [Live Demo Link](https://math-magicians-u2nc.onrender.com)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
