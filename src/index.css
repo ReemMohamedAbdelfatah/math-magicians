@@ -1,27 +1,70 @@
-body {
-  margin: 0;
-  font-family:
-    -apple-system,
-    BlinkMacSystemFont,
-    'Segoe UI',
-    'Roboto',
-    'Oxygen',
-    'Ubuntu',
-    'Cantarell',
-    'Fira Sans',
-    'Droid Sans',
-    'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+.container {
+  display: flex;
+  justify-content: space-between;
+  margin: 70px;
 }
 
-code {
+p {
+  font-size: x-large;
+  font-weight: bold;
+}
+
+.calculator {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: 80px;
+  width: 400px;
+}
+
+.child {
+  border: 1px solid #000;
+}
+
+.display-result {
+  grid-column: 1/5;
+  display: grid;
+  align-items: center;
+  justify-content: end;
+  padding-right: 20px;
   font-family:
-    source-code-pro,
-    Menlo,
-    Monaco,
-    Consolas,
-    'Courier New',
-    monospace;
+    'HelveticaNeue-Light',
+    'Helvetica Neue Light',
+    Arial,
+    sans-serif;
+  font-size: 30px;
+  color: #000;
+}
+
+.zero {
+  grid-column: 1/3;
+  display: grid;
+  align-items: center;
+  justify-content: start;
+  padding-left: 40px;
+}
+
+div button {
+  font-family:
+    'HelveticaNeue-Light',
+    'Helvetica Neue Light',
+    Arial,
+    sans-serif;
+  font-size: 30px;
+  color: #000;
+}
+
+div button:hover {
+  color: #fff;
+}
+
+.orange {
+  background-color: #f5913e;
+}
+
+.light-grey {
+  background-color: #e0e0e0;
+}
+
+.dark-grey {
+  background-color: #858693;
 }
