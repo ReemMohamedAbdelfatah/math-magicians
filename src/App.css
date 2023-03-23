@@ -1,4 +1,110 @@
 body {
   max-width: max-content;
   margin: auto;
+  font-family:
+    'HelveticaNeue-Light',
+    'Helvetica Neue Light',
+    Arial,
+    sans-serif;
+}
+
+#root {
+  width: 100vw;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-link {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.75rem;
+}
+
+.nav-item {
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 700;
+  margin: 0 0.25rem;
+  color: black;
+}
+
+.nav-item:focus {
+  color: #f1c40f;
+}
+
+.home-container {
+  width: 80vw;
+  height: 70vh;
+  margin: 2rem auto;
+  line-height: 1.5rem;
+  background-color: white;
+  box-shadow: 10px 10px 10px 10px rgba(60, 59, 59, 0.75);
+}
+
+.home-title {
+  text-align: center;
+  text-decoration: underline;
+  font-size: 1.5rem;
+  padding: 1rem;
+}
+
+.home-desc {
+  font-size: 20px;
+  text-align: center;
+  padding: 1rem 1rem;
+}
+
+.result {
+  margin-top: 20px;
+}
+
+.result,
+input {
+  background-color: #858694;
+  padding: 10px;
+  border: none;
+  color: #ffff;
+  font-size: 30px;
+  text-align: end;
+}
+
+.qoute {
+  width: 60%;
+  padding: 2rem;
+  margin: 0 auto;
+}
+
+.qoute h1 {
+  font-size: 2rem;
+}
+
+.author {
+  font-size: 2rem;
+  color: red;
+}
+
+input:focus {
+  outline: none;
+}
+
+.buttons {
+  background-color: #e0e0e0;
+  display: block;
+}
+
+.opreator {
+  background-color: #f5913e;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+h2 {
+  margin: 5px;
 }
