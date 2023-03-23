@@ -1,5 +1,7 @@
-import React from 'react';
-import '../App.css';
+import { useState } from 'react';
+import '../index.css';
+import calculate from '../logic/calculate';
+
 
 const Calculator = () => (
   <div className="calculator">
@@ -27,3 +29,4 @@ const Calculator = () => (
 );
 
 export default Calculator;
+
