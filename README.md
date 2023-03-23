@@ -5,7 +5,7 @@
   <img src="mathmagician.jpeg" alt="logo" width="140"  height="auto" />
   <br/>
 
-  <h3><b>MAth Magician Read Me</b></h3>
+  <h3><b>Math Magician Read Me</b></h3>
 
 </div>
 
