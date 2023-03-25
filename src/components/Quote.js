@@ -58,8 +58,8 @@ const WordSection = () => {
   }
 
   // If there are no quotes, return null.
-  if (quote === []) {
-    return null;
+  if (quote && quote.length === 0) {
+    setError(new Error('No quotes found'));
   }
 
   // If there are quotes, display them with the author name.
