@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import '../index.css';
 import calculate from '../logic/calculate';
+import WordSection from './Quote';
 
 export default function Calculator() {
   const [state, setState] = useState({
@@ -21,8 +22,9 @@ export default function Calculator() {
   return (
     <>
       <div className="container">
-        <div>
+        <div style={{ width: '50%' }}>
           <p>Lets Do Some Math!</p>
+          <WordSection />
         </div>
         <div className="calculator">
           <div className="child display-result dark-grey">{next || total || 0}</div>
