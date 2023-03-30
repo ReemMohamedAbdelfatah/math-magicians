@@ -1,18 +1,84 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Quotes Quotes to match Snapshot 1`] = `
+exports[`Link links component should match snapshot 1`] = `
 Object {
   "asFragment": [Function],
   "baseElement": <body>
     <div>
-      <div>
-        Loading...
+      <div
+        class="header"
+      >
+        <h1>
+          Math Magicians
+        </h1>
+        <section
+          class="nav-link"
+        >
+          <a
+            aria-current="page"
+            class="nav-item active"
+            href="/"
+          >
+            Home
+          </a>
+          <h2>
+            |
+          </h2>
+          <a
+            class="nav-item"
+            href="/calculator"
+          >
+            Calculator
+          </a>
+          <h2>
+            |
+          </h2>
+          <a
+            class="nav-item"
+            href="/Quote"
+          >
+            Quote
+          </a>
+        </section>
       </div>
     </div>
   </body>,
   "container": <div>
-    <div>
-      Loading...
+    <div
+      class="header"
+    >
+      <h1>
+        Math Magicians
+      </h1>
+      <section
+        class="nav-link"
+      >
+        <a
+          aria-current="page"
+          class="nav-item active"
+          href="/"
+        >
+          Home
+        </a>
+        <h2>
+          |
+        </h2>
+        <a
+          class="nav-item"
+          href="/calculator"
+        >
+          Calculator
+        </a>
+        <h2>
+          |
+        </h2>
+        <a
+          class="nav-item"
+          href="/Quote"
+        >
+          Quote
+        </a>
+      </section>
     </div>
   </div>,
   "debug": [Function],
@@ -69,19 +135,85 @@ Object {
 }
 `;
 
-exports[`Test Home component Home component should match snapshot 1`] = `
+exports[`Test Home component links component should match snapshot 1`] = `
 Object {
   "asFragment": [Function],
   "baseElement": <body>
     <div>
-      <div>
-        Loading...
+      <div
+        class="header"
+      >
+        <h1>
+          Math Magicians
+        </h1>
+        <section
+          class="nav-link"
+        >
+          <a
+            aria-current="page"
+            class="nav-item active"
+            href="/"
+          >
+            Home
+          </a>
+          <h2>
+            |
+          </h2>
+          <a
+            class="nav-item"
+            href="/calculator"
+          >
+            Calculator
+          </a>
+          <h2>
+            |
+          </h2>
+          <a
+            class="nav-item"
+            href="/Quote"
+          >
+            Quote
+          </a>
+        </section>
       </div>
     </div>
   </body>,
   "container": <div>
-    <div>
-      Loading...
+    <div
+      class="header"
+    >
+      <h1>
+        Math Magicians
+      </h1>
+      <section
+        class="nav-link"
+      >
+        <a
+          aria-current="page"
+          class="nav-item active"
+          href="/"
+        >
+          Home
+        </a>
+        <h2>
+          |
+        </h2>
+        <a
+          class="nav-item"
+          href="/calculator"
+        >
+          Calculator
+        </a>
+        <h2>
+          |
+        </h2>
+        <a
+          class="nav-item"
+          href="/Quote"
+        >
+          Quote
+        </a>
+      </section>
     </div>
   </div>,
   "debug": [Function],

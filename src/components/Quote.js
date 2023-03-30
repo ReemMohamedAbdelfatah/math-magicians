@@ -1,80 +1,53 @@
-import { useEffect, useState } from 'react';
-import '../App.css';
+import { useState, useEffect } from 'react';
 
-// This component fetches and displays quotes about computers using an external API.
-const WordSection = () => {
-  // State variables for storing the quote, loading status, and error message.
-  const [quote, setQuote] = useState([]);
-  const [loading, setLoading] = useState(true);
-  const [error, setError] = useState(null);
+function Quotes() {
+  const [data, setData] = useState([]);
+  const [hasError, setHasError] = useState(false);
+  const [isLoading, setIsLoading] = useState(false);
 
-  // UseEffect hook to fetch quotes when the component mounts.
   useEffect(() => {
-    const api = 'https://api.api-ninjas.com/v1/quotes?category=computers';
+    const fetchData = async () => {
+      setIsLoading(true);
+      try {
+        const res = await fetch('https://api.api-ninjas.com/v1/quotes?category=happiness',
+          {
+            method: 'GET',
+            headers: { 'X-Api-Key': 'GzslFHrh84rXy/9MKOM6Ew==wTmPvGTvwoh0VVxI' },
+          });
+        const json = await res.json();
+        setData(json);
+      } catch (error) {
+        setHasError(true);
+      }
+      setIsLoading(false);
+    };
+    fetchData();
+  }, [setData, setIsLoading]);
 
-    // Make a GET request to the API with a custom API key.
-    fetch(api, {
-      method: 'GET',
-      headers: { 'X-Api-Key': 'amZjXXD3LYh4lr7heCH87iGfPjaKYgoOltpCtXut' },
-      contentType: 'application/json',
-    })
-      .then((response) => {
-        // If the response is not OK, set the error message.
-        if (!response.ok) {
-          setError(true);
-        }
-        return response.json();
-      })
-      .then((data) => {
-        // If the response is successful, store the quote and set loading to false.
-        setQuote(data);
-        setLoading(false);
-      })
-      .catch((error) => {
-        // If there is an error, set the error message and set loading to false.
-        setError(error);
-        setLoading(false);
-      });
-  }, []);
+  if (hasError) return <div>Something went wrong!</div>;
 
-  // If the data is still loading, display a loading message.
-  if (loading) {
-    return (
-      <div className="quotes">
-        <p className="author">Loading quotes...</p>
-      </div>
-    );
-  }
-
-  // If there is an error, display the error message.
-  if (error) {
-    return (
-      <div className="quotes">
-        <p className="author">
-          Sorry, an error occurred:
-          {error.message}
-        </p>
-      </div>
-    );
-  }
-
-  // If there are no quotes, return null.
-  if (quote && quote.length === 0) {
-    setError(new Error('No quotes found'));
-  }
-
-  // If there are quotes, display them with the author name.
+  if (isLoading) return <div>Loading...</div>;
   return (
-    <div className="quotes">
-      {quote.map((x) => <p key={0}>{x.quote}</p>)}
-      {quote.map((x) => (
-        <p className="author" key={0}>
-          -&nbsp;
-          {x.author}
-        </p>
-      ))}
+    <div className="dataDiv">
+      <h1>Quote of the day</h1>
+      {data.length > 0 ? (
+        <div className="dataDetails">
+
+          <p>
+            {data[0].quote}
+            :
+            <span>
+              {' '}
+              {data[0].author}
+            </span>
+          </p>
+        </div>
+      ) : (
+        <p />
+      )}
+
     </div>
   );
-};
+}
 
-export default WordSection;
+export default Quotes;
