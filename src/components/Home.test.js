@@ -1,9 +1,10 @@
-import renderer from 'react-test-renderer';
+import React from 'react';
+import { render } from '@testing-library/react';
 import Home from './Home';
 
 describe('Test Home component', () => {
   it('Home component should match snapshot', () => {
-    const tree = renderer.create(<Home />).toJSON();
-    expect(tree).toMatchSnapshot();
+    const home = render(<Home />);
+    expect(home).toMatchSnapshot();
   });
 });
