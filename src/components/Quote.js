@@ -39,7 +39,7 @@ const WordSection = () => {
   // If the data is still loading, display a loading message.
   if (loading) {
     return (
-      <div className="quotes">
+      <div className="quotes" style={{ position: 'fixed', top: '50%', left: '50%' }}>
         <p className="author">Loading quotes...</p>
       </div>
     );
