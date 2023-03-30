@@ -5,7 +5,7 @@
   <img src="mathmagician.jpeg" alt="logo" width="140"  height="auto" />
   <br/>
 
-  <h3><b>MAth Magician Read Me</b></h3>
+  <h3><b>Math Magician Read Me</b></h3>
 
 </div>
 
@@ -71,17 +71,13 @@
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 ## Screenshot
-
-![readme]()
 Coming Soon ....
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
 
-
 - [Live Demo Link]()
 Coming Soon ....
-
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
