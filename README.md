@@ -2,10 +2,7 @@
 
 <div align="center">
 
-  <img src="mathmagician.jpeg" alt="logo" width="140"  height="auto" />
-  <br/>
-
-  <h3><b>MAth Magician Read Me</b></h3>
+   <h3><b>MAth Magician Read Me</b></h3>
 
 </div>
 
@@ -15,7 +12,6 @@
   - [🛠 Built With](#built-with)
     - [Tech Stack](#tech-stack)
     - [Key Features](#key-features)
-  - [🚀 Live Demo](#live-demo)
 - [💻 Getting Started](#getting-started)
   - [Setup](#setup)
   - [Prerequisites](#prerequisites)
@@ -78,14 +74,6 @@
 ## Screenshot
 
 ![readme](./app_screenshoot.png)
-
-## 🚀 Live Demo <a name="live-demo"></a>
-
-> Add a link to your deployed project.
-
-- [Live Demo Link](https://math-magicians-u2nc.onrender.com)
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
