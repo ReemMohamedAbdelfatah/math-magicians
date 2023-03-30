@@ -1,3 +1,4 @@
+
 import { useEffect, useState } from 'react';
 
 // This component fetches and displays quotes about computers using an external API.
@@ -77,3 +78,4 @@ const WordSection = () => {
 };
 
 export default WordSection;
+

@@ -1,9 +1,10 @@
-import renderer from 'react-test-renderer';
-import Quote from './Quote';
+import React from 'react';
+import { render } from '@testing-library/react';
+import Quotes from './Quote';
 
-describe('Test Quotes component', () => {
-  it('Test component should render properly', () => {
-    const tree = renderer.create(<Quote />).toJSON();
-    expect(tree).toMatchSnapshot();
+describe('Quotes', () => {
+  it('Quotes to match Snapshot', () => {
+    const quotes = render(<Quotes />);
+    expect(quotes).toMatchSnapshot();
   });
 });
